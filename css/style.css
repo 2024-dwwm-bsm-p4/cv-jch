@@ -218,6 +218,7 @@ body{
     }
     .wrapper{
         perspective: 900px;
+        width: 100%;
     }
     .single-card{
         text-align: center;
@@ -236,7 +237,6 @@ body{
         backface-visibility: hidden;
     }
     .front {
-        cursor: pointer;
         height: 100%;
         -webkit-backface-visibility: hidden;
         backface-visibility: hidden;
@@ -422,6 +422,7 @@ body{
     .navbar {
         padding: 35px;
         align-items: center;
+        
     }
     .navbar .logo{
         font-size: 1em;
@@ -524,16 +525,17 @@ body{
     .title h1 {
         font-size: 3rem;
     }
-    .img-box img {
-        height: 30rem;
-    }
     .grid {
         grid-template-columns: repeat(2,1fr);
         grid-gap: 3rem;
         margin: 80px auto;
     }
+    .img-box img {
+        height: 30rem;
+    }
     .card-content {
         height: 13%;
+        cursor: pointer;
     }
     .card-content h1 {
         font-size: 2.5rem;
@@ -553,12 +555,14 @@ body{
     }
     .wrapper, .single-card, .front, .front img, .back{
         height: 30rem;
+        cursor: pointer;
     }
     
     .wrapper .back .content{
         font-size: 1.3rem;
         line-height: 1.8rem;
         padding: 3rem;
+        
     }
 
 /* EXPÉRIENCES */
@@ -567,6 +571,7 @@ body{
     }
     .exp{
         margin: 80px auto;
+        
     }
     .box{
         display: flex;
@@ -575,6 +580,7 @@ body{
     }
     .card-exp{
         height: 30rem;
+        cursor: pointer;
     }
     .card-exp .imgBx{
         height: 30rem;
@@ -620,30 +626,13 @@ body{
         font-size: 3.5rem;
         animation: fadeInRight 4s ease;
     }
-    .card-content{
-        width: auto;
-        height: 15%;
-        padding: 1.4rem;
-    }
-    .card-content h1 {
-        font-size: 3rem;
-    }
-    .card-content p {
-        font-size: 1.2rem;
-        line-height: 1.8rem;
-        padding: 2rem;
-    }
-    .card-content:hover{
-        height: 92%;
-    }
-    .card-content ol, .olHard{
-        font-size: 1.3em;
-    }
-/* EXPÉRIENCES */
-    .img-box img {
+    .wrapper, .single-card, .front, .front img, .back{
         height: 35rem;
-        width: 100%;
+        cursor: pointer;
     }
+    
+/* FORMATIONS */
+    
 } 
 
  
