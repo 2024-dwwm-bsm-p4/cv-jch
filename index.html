@@ -1,218 +1,267 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" >
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
     <script src="css/script.js" defer></script>
     <title>essai</title>
-</head>
-<body>
+  </head>
+  <body>
     <header id="home">
-        <nav class="navbar">
-            <div class="logo">
-                <h4>Ju.C</h4>
-            </div>
-            <div class="nav-links">
-                <ul>
-                    <li><a href="#about">Profil</a></li>
-                    <li><a href="#skills">Compétences</a></li>
-                    <li><a href="#school">Formations</a></li>
-                    <li><a href="#job">Expériences</a></li>    
-                    <li><a href="#contact">Contact</a></li>    
-                </ul>
-            </div>
-            <div class="menu-hamburger">
-                <i class="fa-solid fa-bars"></i>
-            </div>
-        </nav>   
+      <nav class="navbar">
+        <div class="logo">
+          <h4>Ju.C</h4>
+        </div>
+        <div class="nav-links">
+          <ul>
+            <li><a href="#about">Profil</a></li>
+            <li><a href="#skills">Compétences</a></li>
+            <li><a href="#school">Formations</a></li>
+            <li><a href="#job">Expériences</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="menu-hamburger">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </nav>
     </header>
 
     <section id="welcome">
-        <h1>Bonjour et bienvenue sur mon profil de...</h1>
-        <br>
-        <span class="txt-rotate" data-period="1500" data-rotate='[  "Développeuse Web" ]'></span>
-        <br>
-        <button onclick="myFunction()" id="btn-darkMode">Switch mode</button>        
+      <h1>Bonjour et bienvenue sur mon profil de...</h1>
+      <br />
+      <span
+        class="txt-rotate"
+        data-period="1500"
+        data-rotate='[  "Développeuse Web" ]'
+      ></span>
+      <br />
+      <button onclick="myFunction()" id="btn-darkMode">Switch mode</button>
     </section>
 
     <section id="about">
-        <div class="container">
-            <div class="hero-image">
-                <img src="css/img/julie.png">
-            </div>
-            <div class="hero-content">
-                <h1>Julie Charles</h1>
-                <h2>Développeuse Web / Web Mobile</h2>
-                <p>" En pleine reconversion professionnelle après une formation de développeur intégrateur web/ web mobile, je suis passionnée par l'apprentissage continu et avide de découvrir 
-                    de nouveaux outils et technologies du développement web. Curieuse et engagée, je cherche sans cesse à enrichir mes compétences pour relever de nouveaux défis. "</p>
-            </div>
+      <div class="container">
+        <div class="hero-image">
+          <img src="css/img/julie.png" />
         </div>
-    </section>   
+        <div class="hero-content">
+          <h1>Julie Charles</h1>
+          <h2>Développeuse Web / Web Mobile</h2>
+          <p>
+            " En pleine reconversion professionnelle après une formation de
+            développeur intégrateur web/ web mobile, je suis passionnée par
+            l'apprentissage continu et avide de découvrir de nouveaux outils et
+            technologies du développement web. Curieuse et engagée, je cherche
+            sans cesse à enrichir mes compétences pour relever de nouveaux
+            défis. "
+          </p>
+        </div>
+      </div>
+    </section>
 
     <section id="skills">
-        <div class="title">
-            <h1>Compétences</h1>
+      <div class="title">
+        <h1>Compétences</h1>
+      </div>
+      <div class="grid">
+        <div class="card">
+          <div class="img-box">
+            <img src="css/img/soft.jpg" alt="chiot" />
+          </div>
+          <div class="card-content">
+            <h1>Soft skills</h1>
+            <p>
+              Mon parcours m'a permis de développer une grande sensibilité aux
+              besoins des autres, tout en nourrissant ma créativité. Je m'appuie
+              sur quatre qualités essentielles qui me définissent :
+            </p>
+            <br />
+            <ol>
+              <li>la patience, pour aborder les défis avec calme</li>
+              <li>
+                la curiosité, toujours prête à explorer de nouvelles solutions
+              </li>
+              <li>
+                la logique, pour structurer et résoudre les problèmes
+                efficacement
+              </li>
+              <li>
+                l'empathie, pour comprendre et collaborer avec les autres de
+                manière authentique
+              </li>
+            </ol>
+          </div>
         </div>
-        <div class="grid">
-            <div class="card">
-                <div class="img-box">
-                    <img src="css/img/soft.jpg" alt="chiot">
-                </div>
-                <div class="card-content">
-                    <h1>Soft skills</h1>
-                    <p>Mon parcours m'a permis de développer une grande sensibilité aux besoins des autres, tout en nourrissant ma créativité. 
-                        Je m'appuie sur quatre qualités essentielles qui me définissent :
-                    </p>
-                    <br>
-                    <ol>
-                        <li>la patience, pour aborder les défis avec calme</li>
-                        <li>la curiosité, toujours prête à explorer de nouvelles solutions</li>
-                        <li>la logique, pour structurer et résoudre les problèmes efficacement</li>
-                        <li>l'empathie, pour comprendre et collaborer avec les autres de manière authentique</li>
-                    </ol>
-                </div>
-            </div>
-            <div class="card">
-                <div class="img-box">
-                    <img src="css/img/hard.jpg" alt="lion">
-                </div>
-                <div class="card-content">
-                    <h1>Hard skills</h1>
-                    <p>Je me forme quotidiennement pour enrichir mes compétences et maximiser mon expertise.
-                        Animée par une forte motivation et une impatience palpable, je suis déterminée 
-                        à plonger dans l'univers des langages back-end, avide de les maîtriser pour élargir mes compétences et relever de nouveaux défis techniques.</p>
-                    <br>
-                    <ol class="olHard">
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>JS</li>
-                        <li>Figma</li>
-                        <li>Strapi</li>
-                    </ol>
-                </div>
-            </div>
-        </div>    
+        <div class="card">
+          <div class="img-box">
+            <img src="css/img/hard.jpg" alt="lion" />
+          </div>
+          <div class="card-content">
+            <h1>Hard skills</h1>
+            <p>
+              Je me forme quotidiennement pour enrichir mes compétences et
+              maximiser mon expertise. Animée par une forte motivation et une
+              impatience palpable, je suis déterminée à plonger dans l'univers
+              des langages back-end, avide de les maîtriser pour élargir mes
+              compétences et relever de nouveaux défis techniques.
+            </p>
+            <br />
+            <ol class="olHard">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JS</li>
+              <li>Figma</li>
+              <li>Strapi</li>
+            </ol>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section id="school">
-        <div class="title">
-            <h1>Formations</h1>
-        </div>
-        <div class="form">
-            <div class="wrapper">
-                <div class="single-card">
-                    <div class="front">
-                        <img src="css/img/simplon.jpg" alt="">
-                    </div>
-                    <div class="back">
-                        <div class="content">
-                            <h2>Développeur/Intégrateur Web/Web mobile</h2>
-                            <br>
-                            <h4>01/03/2023 - 19/04/2023</h4>
-                            <br>
-                            <p>Développer des compétences d'applications web nécessaires pour réaliser les principales activités d'un intégrateur dans le domaine du développement web.</p>
-                        </div>
-                    </div>
-                </div>
+      <div class="title">
+        <h1>Formations</h1>
+      </div>
+      <div class="form">
+        <div class="wrapper">
+          <div class="single-card">
+            <div class="front">
+              <img src="css/img/simplon.jpg" alt="" />
             </div>
-            <div class="wrapper">
-                <div class="single-card">
-                    <div class="front">
-                        <img src="css/img/thalass'sun.jpg" alt="">
-                    </div>
-                    <div class="back">
-                        <div class="content">
-                            <h2>Technicienne SPA</h2>
-                            <br>
-                            <h4>2009</h4>
-                            <br>
-                            <p>Maîtrise des différents modelages proposés en thalassothérapie (français, ayurvédique, californien, balinais, pierres chaudes...)</p>
-                        </div>
-                    </div>
-                </div>
+            <div class="back">
+              <div class="content">
+                <h2>Développeur/Intégrateur Web/Web mobile</h2>
+                <br />
+                <h4>01/03/2023 - 19/04/2023</h4>
+                <br />
+                <p>
+                  Développer des compétences d'applications web nécessaires pour
+                  réaliser les principales activités d'un intégrateur dans le
+                  domaine du développement web.
+                </p>
+              </div>
             </div>
+          </div>
         </div>
+        <div class="wrapper">
+          <div class="single-card">
+            <div class="front">
+              <img src="css/img/thalass'sun.jpg" alt="" />
+            </div>
+            <div class="back">
+              <div class="content">
+                <h2>Technicienne SPA</h2>
+                <br />
+                <h4>2009</h4>
+                <br />
+                <p>
+                  Maîtrise des différents modelages proposés en thalassothérapie
+                  (français, ayurvédique, californien, balinais, pierres
+                  chaudes...)
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section id="job">
-        <div class="title">
-            <h1>Expériences</h1>
-        </div>
-        <div class="exp">
-            <div class="box">
-                <div class="card-exp">
-                    <div class="imgBx" data-text="Agent Commercial">
-                        <img src="css/img/verte.png" alt="">
-                    </div>
-                    <div class="content">
-                        <div>
-                            <h3>Agent Commercial</h3>
-                            <h5>La Force Verte , 2020 - 2022</h5>
-                            <p>Réalisation d'audits énergétique auprès de particuliers. 
-                                Vente de contrats d'énergie. Commercialisation de produits en énergie renouvelable.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="card-exp">
-                    <div class="imgBx" data-text="Technicienne SPA">
-                        <img src="css/img/canva.png" alt="">
-                    </div>
-                    <div class="content">
-                        <div>
-                            <h3>Technicienne SPA</h3>
-                            <h5>Thalass'sun , Dunkerque - 2010</h5>
-                            <p>Accueil et conseil auprès de la clientèle. Réalisation de modelage 
-                                et de soins corps. Gestion des stocks.</p>
-                        </div>
-                    </div>
-                </div>
+      <div class="title">
+        <h1>Expériences</h1>
+      </div>
+      <div class="exp">
+        <div class="box">
+          <div class="card-exp">
+            <div class="imgBx" data-text="Agent Commercial">
+              <img src="css/img/verte.png" alt="" />
             </div>
+            <div class="content">
+              <div>
+                <h3>Agent Commercial</h3>
+                <h5>La Force Verte , 2020 - 2022</h5>
+                <p>
+                  Réalisation d'audits énergétique auprès de particuliers. Vente
+                  de contrats d'énergie. Commercialisation de produits en
+                  énergie renouvelable.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card-exp">
+            <div class="imgBx" data-text="Technicienne SPA">
+              <img src="css/img/canva.png" alt="" />
+            </div>
+            <div class="content">
+              <div>
+                <h3>Technicienne SPA</h3>
+                <h5>Thalass'sun , Dunkerque - 2010</h5>
+                <p>
+                  Accueil et conseil auprès de la clientèle. Réalisation de
+                  modelage et de soins corps. Gestion des stocks.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <div class="arrow">
-        <a href="#home"><i class="fa-solid fa-arrow-up"></i></a>
+      <a href="#home"><i class="fa-solid fa-arrow-up"></i></a>
     </div>
-    
-    <section id="contact">
-        <div class="content">
-            <div class="content-i">
-                <a href="https://github.com/Julie-Charles16" target="_blank"><i class="fa-brands fa-github"></i></a>
-                <a href="tel:0768292549" target="_blank"><i class="fa-solid fa-mobile-screen-button"></i></a>
-                <a href="https://www.linkedin.com/in/Julie C" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-            </div>
 
-            <div class="cv">
-                <button id="btn_cv"><a href="css/Julie Charles DEV WEB.CV.pdf" class="button" target="_blank">Mon CV en PDF</a></button>
-            </div>
-        </div>      
+    <section id="contact">
+      <div class="content">
+        <div class="content-i">
+          <a href="https://github.com/Julie-Charles16" target="_blank"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <a href="tel:0768292549" target="_blank"
+            ><i class="fa-solid fa-mobile-screen-button"></i
+          ></a>
+          <a href="https://www.linkedin.com/in/Julie C" target="_blank"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+        </div>
+
+        <div class="cv">
+          <button id="btn_cv">
+            <a
+              href="css/Julie Charles DEV WEB.CV.pdf"
+              class="button"
+              target="_blank"
+              >Mon CV en PDF</a
+            >
+          </button>
+        </div>
+      </div>
     </section>
 
-   
-
     <footer class="footer">
-        <p>&copy; Julie-Charles 2024</p>
+      <p>&copy; Julie-Charles 2024</p>
     </footer>
 
-    
-
-
-
-
     <script>
-        document.addEventListener("DOMContentLoaded", function() {
-             const menuHamburger = document.querySelector(".menu-hamburger");
-             const navLinks = document.querySelector(".nav-links");
-    
-             menuHamburger.addEventListener('click', () => {
-                 navLinks.classList.toggle('mobile-menu');
-             });
-         });
-     </script>
-</body>
+      document.addEventListener("DOMContentLoaded", function () {
+        const menuHamburger = document.querySelector(".menu-hamburger");
+        const navLinks = document.querySelector(".nav-links");
+
+        menuHamburger.addEventListener("click", () => {
+          navLinks.classList.toggle("mobile-menu");
+        });
+      });
+    </script>
+  </body>
 </html>
