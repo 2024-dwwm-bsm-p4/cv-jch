@@ -180,13 +180,11 @@ body{
     }
     .card-content p{
         width: auto;
-        font-size: 15px;
         padding: 0 5px;
     }
     .card-content ol{
         text-align: start;
         padding: 0 20px;
-        font-size: 15px;
     }
     .card-content:hover{
         height: 100%;
@@ -623,18 +621,35 @@ body{
     }
 /* COMPÉTENCES */
     .title h1 {
-        font-size: 3.5rem;
+        font-size: 4rem;
         animation: fadeInRight 4s ease;
     }
-    .wrapper, .single-card, .front, .front img, .back{
-        height: 35rem;
-        cursor: pointer;
+    .grid{
+        margin: 150px auto;
+    }
+    .card-content{
+        height: 15%;
+    }
+    .card-content h1{
+        font-size: 3em;
+    }
+    .card-content p{
+        font-size: 1.5em;
+    }
+    .card-content ol, .olHard{
+        padding: 0 40px;
+        font-size: 1.5em;
     }
     
 /* FORMATIONS */
-    
+    .form{
+        margin: 150px auto;
+    }
 } 
-
+/* EXPÉRIENCES */
+    .exp{
+        margin: 150px auto;
+    }
  
 
 /*DARK-MODE*/
