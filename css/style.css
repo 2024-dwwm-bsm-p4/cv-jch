@@ -97,7 +97,7 @@ body{
     }
 
 /* PROFIL */
-    #about{
+    #profil{
         background-color: #f8f8f8;
         overflow: hidden;    
         height: 100vh;
@@ -673,7 +673,7 @@ body{
 .dark-mode #welcome{
     background-image: none;
 }
-.dark-mode #about {
+.dark-mode #profil {
     background-color: #000;
 }
 .dark-mode h1{
