@@ -70,7 +70,7 @@ body{
         justify-content: center;
         align-items: center;
         text-align: center;
-        background-image: url("css\img\bg.webp");
+        background-image: url(https://images.unsplash.com/photo-1518655048521-f130df041f66?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
         background-attachment: fixed;
         background-size: cover;    
         background-position: right;
@@ -87,7 +87,7 @@ body{
 /* BOUTON DARK MODE */
     #btn-darkMode{
         display: inline-block;
-        background-color: #ff6347;
+        background-color: #000;
         border-radius: 5px;
         font-size: 18px;
         border: none;
@@ -122,7 +122,7 @@ body{
     }
     .hero-content h1{
         font-size: 2.8em;
-        color: #ff6347;
+        color: #000;
     }
     .hero-content h2{
         font-size: 1.5em;
@@ -359,9 +359,9 @@ body{
 
 /* CONTACT */
     #contact {
-        min-height: 17vh;
+        min-height: 30vh;
         display: flex;
-        justify-content: center;
+        justify-content: space-evenly;
         align-items: center;
         text-align: center;
         background: #f8f8f8;
@@ -495,15 +495,23 @@ body{
         fill: white;
       }
       
+      .arrow{
+        display: flex;
+        justify-content: center;
+    }
+    .arrow a{
+        font-size: 25px;
+        color: #ff6347;
+    }
     #btn_cv {
         display: inline-block;
-        padding: 6px 12px;
-        border-radius: 5px;
-        font-size: 18px;
+        padding: 70px 70px;
+        border-radius: 50%;
+        font-size: 1.5em;
         border: none;
         cursor: pointer;
         transition: 0.3s ease;
-        background-color: #b30000;
+        background-color: #000;
     }
     #btn_cv a{
         color: #ffffff;
@@ -511,19 +519,11 @@ body{
         font-size: 1rem;
     }
     #btn_cv:hover {
-        background-color: #000;
         transform: scale(1.1);
     }
 
 /* FOOTER */
-    .arrow{
-        display: flex;
-        justify-content: center;
-    }
-    .arrow a{
-        font-size: 22px;
-        color: #ff5757;
-    }
+    
     .footer{
         background-color: #333;
         color: #fff;
