@@ -21,7 +21,7 @@ body{
         color: #fff;
         padding: 10px 7px;
         border-radius: 50%;
-        right: 6vw;
+        right: 10vw;
         z-index: 1;
     }
     .navbar .menu-hamburger {
@@ -29,6 +29,7 @@ body{
        font-size: 33px;
        z-index: 1;
     }
+    
     .nav-links {
         top: 0;
         left: 0;
