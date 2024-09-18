@@ -765,9 +765,9 @@ body{
     }
 } 
 /* EXPÉRIENCES */
-    /*CONTACT */
+/*CONTACT */
     
-.button {
+.arrow {
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -793,7 +793,7 @@ body{
     fill: white;
   }
   
-  .button:hover {
+  .arrow:hover {
     width: 140px;
     border-radius: 50px;
     transition-duration: 0.3s;
@@ -801,13 +801,13 @@ body{
     align-items: center;
   }
   
-  .button:hover .svgIcon {
+  .arrow:hover .svgIcon {
     /* width: 20px; */
     transition-duration: 0.3s;
     transform: translateY(-200%);
   }
   
-  .button::before {
+  .arrow::before {
     position: absolute;
     bottom: -20px;
     content: "Back to Top";
@@ -816,7 +816,7 @@ body{
     font-size: 0px;
   }
   
-  .button:hover::before {
+  .arrow:hover::before {
     font-size: 13px;
     opacity: 1;
     bottom: unset;
