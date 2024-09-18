@@ -11,8 +11,9 @@ body{
 
 /* NAVBAR */
     .navbar {
-        padding: 20px;
+        padding: 15px;
         display: flex;
+        align-items: center;
     }
     .navbar .logo {
         position: absolute;
@@ -21,7 +22,7 @@ body{
         color: #fff;
         padding: 10px 7px;
         border-radius: 50%;
-        right: 10vw;
+        right: 4vw;
         z-index: 1;
     }
     .navbar .menu-hamburger {
@@ -51,7 +52,7 @@ body{
         display: flex;
         flex-direction: column;
         align-items: center;
-        font-size: 1.2em;
+        font-size: 1.4em;
         font-weight: 700; 
         list-style: none;
     }
@@ -59,7 +60,7 @@ body{
         margin: 25px 0;
     }
     .navbar a{
-        color: #333;
+        color: #ff6347;
         text-decoration: none;
     }
 
@@ -555,6 +556,7 @@ body{
     }
     .navbar a{
         font-size: 0.8em;
+        color: #333;
         
     }
     .navbar .nav-links ul li a:hover{
