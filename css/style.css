@@ -60,7 +60,7 @@ body{
         margin: 25px 0;
     }
     .navbar a{
-        color: #ff6347;
+        color: #000;
         text-decoration: none;
     }
 
@@ -358,164 +358,241 @@ body{
         margin-top: 10px;
     }
     
+/* ARROW TOP */
+#top{
+    display: flex;
+    justify-content: end;
+    padding: 25px 25px;
+}  
+.arrow {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(20, 20, 20);
+    border: none;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 0px 4px rgba(180, 160, 255, 0.253);
+    cursor: pointer;
+    transition-duration: 0.3s;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .svgIcon {
+    width: 12px;
+    transition-duration: 0.3s;
+  }
+  
+  .svgIcon path {
+    fill: white;
+  }
+  
+  .arrow:hover {
+    width: 140px;
+    border-radius: 50px;
+    transition-duration: 0.3s;
+    background-color: rgb(181, 160, 255);
+    align-items: center;
+  }
+  
+  .arrow:hover .svgIcon {
+    /* width: 20px; */
+    transition-duration: 0.3s;
+    transform: translateY(-200%);
+  }
+  
+  .arrow::before {
+    position: absolute;
+    bottom: -20px;
+    content: "Back to Top";
+    color: white;
+    /* transition-duration: .3s; */
+    font-size: 0px;
+  }
+  
+  .arrow:hover::before {
+    font-size: 13px;
+    opacity: 1;
+    bottom: unset;
+    /* transform: translateY(-30px); */
+    transition-duration: 0.3s;
+  }
 
 /* CONTACT */
-    #contact {
-        min-height: 30vh;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        text-align: center;
-        background: #f8f8f8;
-    }
-    .main {
-        display: flex;
-        flex-direction: column;
-        gap: 0.5em;
-      }
-      
-      .up {
-        display: flex;
-        flex-direction: row;
-        gap: 0.5em;
-      }
-      
-      .down {
-        display: flex;
-        flex-direction: row;
-        gap: 0.5em;
-      }
-      
-      .card1 {
-        width: 90px;
-        height: 90px;
-        outline: none;
-        border: none;
-        background: white;
-        border-radius: 90px 5px 5px 5px;
-        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
-          rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-        transition: 0.2s ease-in-out;
-      }
-      
-      .phone {
-        margin-top: 1.5em;
-        margin-left: 1.2em;
-        fill: #00ff00;
-      }
-      
-      .card2 {
-        width: 90px;
-        height: 90px;
-        outline: none;
-        border: none;
-        background: white;
-        border-radius: 5px 90px 5px 5px;
-        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
-          rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-        transition: 0.2s ease-in-out;
-      }
-      
-      .linkedin {
-        margin-top: 1.5em;
-        margin-left: -0.9em;
-        fill: #0077b5;
-      }
-      
-      .card3 {
-        width: 90px;
-        height: 90px;
-        outline: none;
-        border: none;
-        background: white;
-        border-radius: 5px 5px 5px 90px;
-        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
-          rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-        transition: 0.2s ease-in-out;
-      }
-      
-      .github {
-        margin-top: -0.6em;
-        margin-left: 1.2em;
-      }
-      
-      .card4 {
-        width: 90px;
-        height: 90px;
-        outline: none;
-        border: none;
-        background: white;
-        border-radius: 5px 5px 90px 5px;
-        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
-          rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-        transition: 0.2s ease-in-out;
-      }
-      
-      .discord {
-        margin-top: -0.9em;
-        margin-left: -1.2em;
-        fill: #8c9eff;
-      }
-      
-      .card1:hover {
-        cursor: pointer;
-        scale: 1.1;
-        background-color: #00ff00;
-      }
-      
-      .card1:hover .phone {
-        fill: white;
-      }
-      
-      .card2:hover {
-        cursor: pointer;
-        scale: 1.1;
-        background-color: #0077b5;
-      }
-      
-      .card2:hover .linkedin {
-        fill: white;
-      }
-      
-      .card3:hover {
-        cursor: pointer;
-        scale: 1.1;
-        background-color: black;
-      }
-      
-      .card3:hover .github {
-        fill: white;
-      }
-      
-      .card4:hover {
-        cursor: pointer;
-        scale: 1.1;
-        background-color: #8c9eff;
-      }
-      
-      .card4:hover .discord {
-        fill: white;
-      }
-      
-     
-    #btn_cv {
-        display: inline-block;
-        padding: 70px 70px;
-        border-radius: 50%;
-        font-size: 1.5em;
-        border: none;
-        cursor: pointer;
-        transition: 0.3s ease;
-        background-color: #000;
-    }
-    #btn_cv a{
-        color: #ffffff;
-        text-decoration: none;
-        font-size: 1rem;
-    }
-    #btn_cv:hover {
-        transform: scale(1.1);
-    }
+#contact{
+    min-height: 50vh;
+    background-color: #f8f8f8;
+}
+.social-login-icons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    -webkit-box-reflect: below 5px linear-gradient(transparent, #00000055);
+  }
+  .social-login-icons svg {
+    width: 40px;
+  }
+  
+  .social-icon-1,
+  .social-icon-1-1,
+  .social-icon-2,
+  .social-icon-2-2,
+  .social-icon-3,
+  .social-icon-3-3,
+  .social-icon-4,
+  .social-icon-4-4 {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    margin: 20px 0 0px 0;
+  }
+  
+  .icon svg {
+    fill: #111;
+  }
+  
+  .socialcontainer {
+    height: 80px;
+    overflow: hidden;
+  }
+  .social-icon-1 {
+    transition-duration: 0.4s;
+    background-color: rgb(0, 0, 0);
+    transition-timing-function: cubic-bezier(0.46, -0.78, 0.5, 1.56);
+  }
+  .social-icon-1 svg,
+  .social-icon-2 svg,
+  .social-icon-3 svg,
+  .social-icon-4 svg {
+    opacity: 0;
+    transition-duration: 0.5s;
+    transition-delay: 0.2s;
+  }
+  .social-icon-1-1 {
+    transition-duration: 0.4s;
+    background-color: rgb(0, 0, 0, 0);
+  }
+  .socialcontainer:hover .social-icon-1 {
+    transform: translateY(-70px);
+  }
+  .socialcontainer:hover .social-icon-1 svg,
+  .socialcontainer:hover .social-icon-2 svg,
+  .socialcontainer:hover .social-icon-3 svg,
+  .socialcontainer:hover .social-icon-4 svg {
+    opacity: 1;
+  }
+  .social-icon-2 {
+    transition-duration: 0.4s;
+    transition-timing-function: cubic-bezier(0.46, -0.78, 0.5, 1.56);
+    background: linear-gradient(
+      72.44deg,
+      #ff7a00 11.92%,
+      #ff0169 51.56%,
+      #d300c5 85.69%
+    );
+  }
+  .socialcontainer:hover .social-icon-2 {
+    transform: translateY(-70px);
+  }
+  .social-icon-3 {
+    transition-duration: 0.4s;
+    transition-timing-function: cubic-bezier(0.46, -0.78, 0.5, 1.56);
+    background: #316ff6;
+  }
+  
+  .socialcontainer:hover .social-icon-3 {
+    transform: translateY(-70px);
+  }
+  .social-icon-4 {
+    transition-duration: 0.4s;
+    transition-timing-function: cubic-bezier(0.46, -0.78, 0.5, 1.56);
+  
+    background: linear-gradient(
+      180deg,
+      rgba(129, 34, 144, 1) 0%,
+      rgba(77, 34, 124, 1) 91%
+    );
+  }
+  
+  .socialcontainer:hover .social-icon-4 {
+    transform: translateY(-70px);
+  }
+  
+
+
+
+
+
+  /* BOUTON CV + LETTRE DE MOTIVATION */ 
+.Documents-btn {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: fit-content;
+    height: 45px;
+    border: none;
+    padding: 0px 15px;
+    border-radius: 5px;
+    background-color: rgb(49, 49, 83);
+    gap: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  .folderContainer {
+    width: 40px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+  }
+  .fileBack {
+    z-index: 1;
+    width: 80%;
+    height: auto;
+  }
+  .filePage {
+    width: 50%;
+    height: auto;
+    position: absolute;
+    z-index: 2;
+    transition: all 0.3s ease-out;
+  }
+  .fileFront {
+    width: 85%;
+    height: auto;
+    position: absolute;
+    z-index: 3;
+    opacity: 0.95;
+    transform-origin: bottom;
+    transition: all 0.3s ease-out;
+  }
+  .text {
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+  }
+  .Documents-btn:hover .filePage {
+    transform: translateY(-5px);
+  }
+  .Documents-btn:hover {
+    background-color: rgb(58, 58, 94);
+  }
+  .Documents-btn:active {
+    transform: scale(0.95);
+  }
+  .Documents-btn:hover .fileFront {
+    transform: rotateX(30deg);
+  }
+  
 
 /* FOOTER */
     
@@ -764,65 +841,9 @@ body{
         margin: 150px auto;
     }
 } 
-/* EXPÉRIENCES */
+
 /*CONTACT */
-    
-.arrow {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: rgb(20, 20, 20);
-    border: none;
-    font-weight: 600;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0px 0px 0px 4px rgba(180, 160, 255, 0.253);
-    cursor: pointer;
-    transition-duration: 0.3s;
-    overflow: hidden;
-    position: relative;
-  }
-  
-  .svgIcon {
-    width: 12px;
-    transition-duration: 0.3s;
-  }
-  
-  .svgIcon path {
-    fill: white;
-  }
-  
-  .arrow:hover {
-    width: 140px;
-    border-radius: 50px;
-    transition-duration: 0.3s;
-    background-color: rgb(181, 160, 255);
-    align-items: center;
-  }
-  
-  .arrow:hover .svgIcon {
-    /* width: 20px; */
-    transition-duration: 0.3s;
-    transform: translateY(-200%);
-  }
-  
-  .arrow::before {
-    position: absolute;
-    bottom: -20px;
-    content: "Back to Top";
-    color: white;
-    /* transition-duration: .3s; */
-    font-size: 0px;
-  }
-  
-  .arrow:hover::before {
-    font-size: 13px;
-    opacity: 1;
-    bottom: unset;
-    /* transform: translateY(-30px); */
-    transition-duration: 0.3s;
-  }
+
   
 
 /*DARK-MODE*/
