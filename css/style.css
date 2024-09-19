@@ -424,7 +424,7 @@ body{
 
 /* CONTACT */
 #contact{
-    min-height: 30vh;
+    min-height: 25vh;
     background-color: #f8f8f8;
 }
 .contact-title h1, h2{
