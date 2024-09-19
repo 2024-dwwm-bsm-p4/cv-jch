@@ -212,6 +212,7 @@ body{
         height: 24rem;
         margin: 0 auto;
         position: relative;
+        border-radius: 0.6rem;
     }
     .wrapper{
         perspective: 900px;
@@ -221,6 +222,7 @@ body{
         text-align: center;
         transition: all 1.5s cubic-bezier(0.7, -0.5, 0.3, 1.8);
         transform-style: preserve-3d;
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.7);
     }
     .wrapper:hover .single-card {
         transform: rotateY(180deg);
@@ -285,6 +287,8 @@ body{
         display: flex;
         width: 100%;
         margin: 10px 0;
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.7);
+        border-radius: 0.6rem;
     }
     .card-exp .imgBx {
         position: relative;
@@ -299,6 +303,7 @@ body{
         align-items: center;
         overflow: hidden;
         transition: 0.5s ease-in-out;
+        border-radius: 0.6rem;
     }
     #job .exp .box .card-exp:hover .imgBx{
         width: 100px;
