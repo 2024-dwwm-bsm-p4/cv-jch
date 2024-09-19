@@ -31,7 +31,6 @@ body{
        font-size: 33px;
        z-index: 1;
     }
-    
     .nav-links {
         top: 0;
         left: 0;
@@ -64,7 +63,6 @@ body{
         color: #000;
         text-decoration: none;
     }
-
 /* ACCROCHE */
     #welcome{
         height: 90vh;
@@ -85,7 +83,6 @@ body{
         font-size: 1.8rem;
         color: #ff6347;
     }
-
 /* BOUTON DARK MODE */
     #btn-darkMode{
         display: inline-block;
@@ -98,7 +95,6 @@ body{
         color: #fff;
         padding: 6px 12px;
     }
-
 /* PROFIL */
     #profil{
         background-color: #f8f8f8;
@@ -137,7 +133,6 @@ body{
         margin: 10px;
         font-weight: 600;
     }
-     
 /* COMPÉTENCES */
     #skills{
         min-height: 100vh;
@@ -201,7 +196,6 @@ body{
         flex-direction: column;
         align-items: center;
     }
-
 /* FORMATIONS */
     #school{
         min-height: 100vh;
@@ -269,7 +263,6 @@ body{
         font-weight: 400;
         padding: 1rem;
     }
-
 /* EXPÉRIENCES */
     #job{
         min-height: 100vh;
@@ -343,279 +336,261 @@ body{
         justify-content: center;
         align-items: center;
     }
-    #job .exp .box .card-exp .content h3, h5, p{
+    #job .exp .box .card-exp .content h2, h3, p{
         width: auto;
         height: auto;
     }
-    #job .exp .box .card-exp .content h3{
+    #job .exp .box .card-exp .content h2{
         margin-bottom: 5px;
         font-size: 2.2em;
     }
-    #job .exp .box .card-exp .content h5{
+    #job .exp .box .card-exp .content h3{
         font-size: 1em;
     }
     #job .exp .box .card-exp .content p{
         display: inline-block;
         margin-top: 10px;
     }
-    
-/* ARROW TOP */
-#top{
-    display: flex;
-    justify-content: end;
-    padding: 25px 25px;
-}  
-.arrow {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: rgb(20, 20, 20);
-    border: none;
-    font-weight: 600;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0px 0px 0px 4px rgba(180, 160, 255, 0.253);
-    cursor: pointer;
-    transition-duration: 0.3s;
-    overflow: hidden;
-    position: relative;
-  }
-  
-  .svgIcon {
-    width: 12px;
-    transition-duration: 0.3s;
-  }
-  
-  .svgIcon path {
-    fill: white;
-  }
-  
-  .arrow:hover {
-    width: 140px;
-    border-radius: 50px;
-    transition-duration: 0.3s;
-    background-color: rgb(181, 160, 255);
-    align-items: center;
-  }
-  
-  .arrow:hover .svgIcon {
-    /* width: 20px; */
-    transition-duration: 0.3s;
-    transform: translateY(-200%);
-  }
-  
-  .arrow::before {
-    position: absolute;
-    bottom: -20px;
-    content: "Back to Top";
-    color: white;
-    /* transition-duration: .3s; */
-    font-size: 0px;
-  }
-  
-  .arrow:hover::before {
-    font-size: 13px;
-    opacity: 1;
-    bottom: unset;
-    /* transform: translateY(-30px); */
-    transition-duration: 0.3s;
-  }
-
 /* CONTACT */
-#contact{
-    min-height: 25vh;
-    background-color: #f8f8f8;
-}
-.contact-title h1, h2{
-   text-align: center;
-}
-.contact-title h1{
-    font-size: 2.2em;
-}
-.contact-title h2{
-    padding: 10px;
-    font-size: 1.2em;
-    font-weight: lighter;
-}
-.social-login-icons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    -webkit-box-reflect: below 5px linear-gradient(transparent, #00000055);
-  }
-  .social-login-icons svg {
-    width: 40px;
-  }
-  
-  .social-icon-1,
-  .social-icon-1-1,
-  .social-icon-2,
-  .social-icon-2-2,
-  .social-icon-3,
-  .social-icon-3-3,
-  .social-icon-4,
-  .social-icon-4-4 {
-    width: 50px;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50px;
-    margin: 20px 0 0px 0;
-  }
-  
-  .icon svg {
-    fill: #111;
-  }
-  
-  .socialcontainer {
-    height: 80px;
-    overflow: hidden;
-  }
-  .social-icon-1 {
-    transition-duration: 0.4s;
-    background: linear-gradient(
-        180deg,
-        rgba(129, 34, 144, 1) 0%,
-        rgba(77, 34, 124, 1) 91%
-      );
-    transition-timing-function: cubic-bezier(0.46, -0.78, 0.5, 1.56);
-    padding: 0 0 20px 0;
-  }
-  .social-icon-1 svg,
-  .social-icon-2 svg,
-  .social-icon-3 svg,
-  .social-icon-4 svg {
-    opacity: 0;
-    transition-duration: 0.5s;
-    transition-delay: 0.2s;
-  }
-  .social-icon-1-1 {
-    transition-duration: 0.4s;
-    background-color: rgb(0, 0, 0, 0);
-  }
-  .socialcontainer:hover .social-icon-1 {
-    transform: translateY(-70px);
-  }
-  .socialcontainer:hover .social-icon-1 svg,
-  .socialcontainer:hover .social-icon-2 svg,
-  .socialcontainer:hover .social-icon-3 svg,
-  .socialcontainer:hover .social-icon-4 svg {
-    opacity: 1;
-  }
-  .social-icon-2 {
-    transition-duration: 0.4s;
-    transition-timing-function: cubic-bezier(0.46, -0.78, 0.5, 1.56);
-    background: linear-gradient(
-      72.44deg,
-      #ff7a00 11.92%,
-      #ff0169 51.56%,
-      #d300c5 85.69%
-    );
-  }
-  .socialcontainer:hover .social-icon-2 {
-    transform: translateY(-70px);
-  }
-  .social-icon-3 {
-    transition-duration: 0.4s;
-    transition-timing-function: cubic-bezier(0.46, -0.78, 0.5, 1.56);
-    background: #316ff6;
-  }
-  
-  .socialcontainer:hover .social-icon-3 {
-    transform: translateY(-70px);
-  }
-  .social-icon-4 {
-    transition-duration: 0.4s;
-    transition-timing-function: cubic-bezier(0.46, -0.78, 0.5, 1.56);
-    background-color: rgb(0, 0, 0);
-  }
-  
-  .socialcontainer:hover .social-icon-4 {
-    transform: translateY(-70px);
-  }
-
-  /* BOUTON CV + LETTRE DE MOTIVATION */ 
-  .letter{
-    padding: 8rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .letter-cv{
-    padding: 0 0 20px 0;
-  }
-  .letter-cv a, .letter-motivation a{
-    text-decoration: none;
-  }
-.Documents-btn {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    width: fit-content;
-    height: 45px;
-    border: none;
-    padding: 0px 15px;
-    border-radius: 5px;
-    background-color: rgb(49, 49, 83);
-    gap: 10px;
-    cursor: pointer;
-    transition: all 0.3s;
-  }
-  .folderContainer {
-    width: 40px;
-    height: fit-content;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-end;
-    position: relative;
-  }
-  .fileBack {
-    z-index: 1;
-    width: 80%;
-    height: auto;
-  }
-  .filePage {
-    width: 50%;
-    height: auto;
-    position: absolute;
-    z-index: 2;
-    transition: all 0.3s ease-out;
-  }
-  .fileFront {
-    width: 85%;
-    height: auto;
-    position: absolute;
-    z-index: 3;
-    opacity: 0.95;
-    transform-origin: bottom;
-    transition: all 0.3s ease-out;
-  }
-  .text {
-    color: white;
-    font-size: 14px;
-    font-weight: 600;
-    letter-spacing: 0.5px;
-  }
-  .Documents-btn:hover .filePage {
-    transform: translateY(-5px);
-  }
-  .Documents-btn:hover {
-    background-color: rgb(58, 58, 94);
-  }
-  .Documents-btn:active {
-    transform: scale(0.95);
-  }
-  .Documents-btn:hover .fileFront {
-    transform: rotateX(30deg);
-  }
-  
-
+    #contact{
+        min-height: 20vh;
+        background-color: #f8f8f8;
+    }
+    .contact-title h1{
+        font-size: 2.2em;
+        text-align: center;
+    }
+    .contact-title h2{
+        padding: 10px;
+        font-size: 1.2em;
+        font-weight: lighter;
+        text-align: center;
+    }
+    .social-login-icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        -webkit-box-reflect: below 5px linear-gradient(transparent, #00000055);
+    }
+    .social-login-icons svg {
+        width: 40px;
+    }
+    .social-icon-1,
+    .social-icon-1-1,
+    .social-icon-2,
+    .social-icon-2-2,
+    .social-icon-3,
+    .social-icon-3-3,
+    .social-icon-4,
+    .social-icon-4-4 {
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50px;
+        margin: 20px 0 0px 0;
+    }
+    .icon svg {
+        fill: #111;
+    }
+    .socialcontainer {
+        height: 80px;
+        overflow: hidden;
+    }
+    .social-icon-1 {
+        transition-duration: 0.4s;
+        background: linear-gradient(
+            180deg,
+            rgba(129, 34, 144, 1) 0%,
+            rgba(77, 34, 124, 1) 91%
+        );
+        transition-timing-function: cubic-bezier(0.46, -0.78, 0.5, 1.56);
+        padding: 0 0 20px 0;
+    }
+    .social-icon-1 svg,
+    .social-icon-2 svg,
+    .social-icon-3 svg,
+    .social-icon-4 svg {
+        opacity: 0;
+        transition-duration: 0.5s;
+        transition-delay: 0.2s;
+    }
+    .social-icon-1-1 {
+        transition-duration: 0.4s;
+        background-color: rgb(0, 0, 0, 0);
+    }
+    .socialcontainer:hover .social-icon-1 {
+        transform: translateY(-70px);
+    }
+    .socialcontainer:hover .social-icon-1 svg,
+    .socialcontainer:hover .social-icon-2 svg,
+    .socialcontainer:hover .social-icon-3 svg,
+    .socialcontainer:hover .social-icon-4 svg {
+        opacity: 1;
+    }
+    .social-icon-2 {
+        transition-duration: 0.4s;
+        transition-timing-function: cubic-bezier(0.46, -0.78, 0.5, 1.56);
+        background: linear-gradient(
+        72.44deg,
+        #ff7a00 11.92%,
+        #ff0169 51.56%,
+        #d300c5 85.69%
+        );
+    }
+    .socialcontainer:hover .social-icon-2 {
+        transform: translateY(-70px);
+    }
+    .social-icon-3 {
+        transition-duration: 0.4s;
+        transition-timing-function: cubic-bezier(0.46, -0.78, 0.5, 1.56);
+        background: #316ff6;
+    }
+    .socialcontainer:hover .social-icon-3 {
+        transform: translateY(-70px);
+    }
+    .social-icon-4 {
+        transition-duration: 0.4s;
+        transition-timing-function: cubic-bezier(0.46, -0.78, 0.5, 1.56);
+        background-color: rgb(0, 0, 0);
+    }
+    .socialcontainer:hover .social-icon-4 {
+        transform: translateY(-70px);
+    }
+/* BOUTON CV + LETTRE DE MOTIVATION */ 
+    .letter{
+        padding: 8rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .letter-cv{
+        padding: 0 0 20px 0;
+    }
+    .letter-cv a, .letter-motivation a{
+        text-decoration: none;
+    }
+    .Documents-btn {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        width: fit-content;
+        height: 45px;
+        border: none;
+        padding: 0px 15px;
+        border-radius: 5px;
+        background-color: rgb(49, 49, 83);
+        gap: 10px;
+        cursor: pointer;
+        transition: all 0.3s;
+    }
+    .folderContainer {
+        width: 40px;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        position: relative;
+    }
+    .fileBack {
+        z-index: 1;
+        width: 80%;
+        height: auto;
+    }
+    .filePage {
+        width: 50%;
+        height: auto;
+        position: absolute;
+        z-index: 2;
+        transition: all 0.3s ease-out;
+    }
+    .fileFront {
+        width: 85%;
+        height: auto;
+        position: absolute;
+        z-index: 3;
+        opacity: 0.95;
+        transform-origin: bottom;
+        transition: all 0.3s ease-out;
+    }
+    .text {
+        color: white;
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+    }
+    .Documents-btn:hover .filePage {
+        transform: translateY(-5px);
+    }
+    .Documents-btn:hover {
+        background-color: rgb(58, 58, 94);
+    }
+    .Documents-btn:active {
+        transform: scale(0.95);
+    }
+    .Documents-btn:hover .fileFront {
+        transform: rotateX(30deg);
+    }
+/* ARROW TOP */
+    #top{
+        display: flex;
+        justify-content: end;
+        padding: 25px 25px;
+    }  
+    .arrow {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: rgb(20, 20, 20);
+        border: none;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0px 0px 0px 4px rgba(180, 160, 255, 0.253);
+        cursor: pointer;
+        transition-duration: 0.3s;
+        overflow: hidden;
+        position: relative;
+    }
+    .svgIcon {
+        width: 12px;
+        transition-duration: 0.3s;
+    }
+    .svgIcon path {
+        fill: white;
+    }
+    .arrow:hover {
+        width: 140px;
+        border-radius: 50px;
+        transition-duration: 0.3s;
+        background-color: rgb(181, 160, 255);
+        align-items: center;
+    }
+    .arrow:hover .svgIcon {
+        /* width: 20px; */
+        transition-duration: 0.3s;
+        transform: translateY(-200%);
+    }
+    .arrow::before {
+        position: absolute;
+        bottom: -20px;
+        content: "Back to Top";
+        color: white;
+        /* transition-duration: .3s; */
+        font-size: 0px;
+    }
+    .arrow:hover::before {
+        font-size: 13px;
+        opacity: 1;
+        bottom: unset;
+        /* transform: translateY(-30px); */
+        transition-duration: 0.3s;
+    }
 /* FOOTER */
-    
     .footer{
         background-color: #333;
         color: #fff;
@@ -623,16 +598,12 @@ body{
         font-size: 15px;
     }
 
-
-    
 /** RESPONSIVE **/
-
 @media(min-width:900px){
 /* NAVBAR */
     .navbar {
         padding: 35px;
         align-items: center;
-        
     }
     .navbar .logo{
         font-size: 1em;
@@ -654,7 +625,6 @@ body{
     .navbar a{
         font-size: 0.8em;
         color: #333;
-        
     }
     .navbar .nav-links ul li a:hover{
         color: #ff6347;
@@ -668,7 +638,6 @@ body{
     .navbar .menu-hamburger{
         display: none;
     }
-
 /* ACCROCHE */
     #welcome{
         height: 92vh;
@@ -704,9 +673,7 @@ body{
         margin: 0 35px;
         animation: fadeInLeft 8s ease;
     }
-    
 /** ANIMATION **/
-
 @keyframes fadeInLeft {
     0%{
         opacity: 0;
@@ -717,7 +684,7 @@ body{
         transform: translateX(0px);
     }     
 }
-    
+
 @keyframes fadeInRight {    
     0%{
         opacity: 0;
@@ -728,7 +695,6 @@ body{
         transform: translateX(0px);
     }
 }
-
 /* COMPÉTENCES */
     #skills {
         padding: 2rem 0;
@@ -756,7 +722,6 @@ body{
         font-size: 1rem;
         padding: 15px 0;
     }
-    
 /* FORMATIONS */
     #school{
         padding: 2rem 0;
@@ -770,21 +735,17 @@ body{
         height: 30rem;
         cursor: pointer;
     }
-    
     .wrapper .back .content{
         font-size: 1.3rem;
         line-height: 1.8rem;
-        padding: 3rem;
-        
+        padding: 3rem; 
     }
-
 /* EXPÉRIENCES */
     #job{
         padding: 2rem 0;
     }
     .exp{
         margin: 80px auto;
-        
     }
     .box{
         display: flex;
@@ -799,9 +760,6 @@ body{
         height: 30rem;
     }
 }
-
-
-  
 
 @media(min-width:1200px){
 /* NAVBAR */
@@ -857,81 +815,86 @@ body{
         padding: 0 40px;
         font-size: 1.5em;
     }
-    
 /* FORMATIONS */
     .form{
         margin: 150px auto;
     }
-} 
-
+/* EXPÉRIENCES */
+    #job .exp .box .card-exp:hover .imgBx{
+        width: 150px;
+        height: 150px;
+        left: -5%;
+    }
+    #job .exp .box .card-exp .content h2, h3, p{
+        padding: 0 0 0 60px; 
+    }
+    #job .exp .box .card-exp .content p{
+        font-size: 1.1em;
+    }
 /*CONTACT */
-.contact-title h1{
-    font-size: 3em;
-}
-.contact-title h2{
-    padding: 20px;
-    font-size: 1.5em;
-    font-weight: lighter;
-}
-  
+    .contact-title h1{
+        font-size: 3em;
+    }
+    .contact-title h2{
+        padding: 20px;
+        font-size: 1.5em;
+        font-weight: lighter;
+    }
+}  
 
 /*DARK-MODE*/
-.dark-mode{
-    background-color: #333;;
-}
-.dark-mode .navbar .menu-hamburger img{
-    color: #fff;
-}
-.dark-mode a{
-    color: #fff;
-}
-.dark-mode #home {
-    background-color: #333;
-    box-shadow: 0 0.1rem 0.7rem rgb(255, 87, 87);
-}
-.dark-mode .logo {
-    background-color: #fff;
-}
-.dark-mode #home .navbar .logo h4 {
-    color: #333;
-}
-.dark-mode #welcome{
-    background-image: none;
-}
-.dark-mode #profil {
-    background-color: #333;
-}
-.dark-mode h1{
-    color: #fff !important;
-}
-.dark-mode h2{
-    color: #ff6347;
-}
-.dark-mode #school{
-    background-color: #333;
-}
-.dark-mode #job{
-    background-color: #333;
-}
-.dark-mode .card-exp .imgBx{
-    box-shadow: 0 0.1rem 0.7rem rgb(255, 87, 87);
-}
-.dark-mode #contact{
-    background-color: #333;
-}
-.dark-mode #contact .content i{
-    color: #fff;
-}
-.dark-mode #btn_cv{
-    background-color: #fff;    
-}
-.dark-mode #btn_cv a{
-    color: #333;
-}
-
-
-
-
+    .dark-mode{
+        background-color: #333;;
+    }
+    .dark-mode .navbar .menu-hamburger img{
+        color: #fff;
+    }
+    .dark-mode a{
+        color: #fff;
+    }
+    .dark-mode #home {
+        background-color: #333;
+        box-shadow: 0 0.1rem 0.7rem rgb(255, 87, 87);
+    }
+    .dark-mode .logo {
+        background-color: #fff;
+    }
+    .dark-mode #home .navbar .logo h4 {
+        color: #333;
+    }
+    .dark-mode #welcome{
+        background-image: none;
+    }
+    .dark-mode #profil {
+        background-color: #333;
+    }
+    .dark-mode h1{
+        color: #fff !important;
+    }
+    .dark-mode h2{
+        color: #ff6347;
+    }
+    .dark-mode #school{
+        background-color: #333;
+    }
+    .dark-mode #job{
+        background-color: #333;
+    }
+    .dark-mode .card-exp .imgBx{
+        box-shadow: 0 0.1rem 0.7rem rgb(255, 87, 87);
+    }
+    .dark-mode #contact{
+        background-color: #333;
+    }
+    .dark-mode #contact .content i{
+        color: #fff;
+    }
+    .dark-mode #btn_cv{
+        background-color: #fff;    
+    }
+    .dark-mode #btn_cv a{
+        color: #333;
+    }
 
 
 
