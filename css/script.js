@@ -1,5 +1,4 @@
 //BOUTON DARK-MODE//
-
 function myFunction() {
   var element = document.body;
 
