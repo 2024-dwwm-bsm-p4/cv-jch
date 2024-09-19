@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 body{
     font-family: "Poppins", sans-serif;
@@ -423,11 +424,23 @@ body{
 
 /* CONTACT */
 #contact{
-    min-height: 50vh;
+    min-height: 30vh;
     background-color: #f8f8f8;
+}
+.contact-title h1, h2{
+   text-align: center;
+}
+.contact-title h1{
+    font-size: 2.2em;
+}
+.contact-title h2{
+    padding: 10px;
+    font-size: 1.2em;
+    font-weight: lighter;
 }
 .social-login-icons {
     display: flex;
+    justify-content: center;
     align-items: center;
     gap: 10px;
     -webkit-box-reflect: below 5px linear-gradient(transparent, #00000055);
@@ -463,8 +476,13 @@ body{
   }
   .social-icon-1 {
     transition-duration: 0.4s;
-    background-color: rgb(0, 0, 0);
+    background: linear-gradient(
+        180deg,
+        rgba(129, 34, 144, 1) 0%,
+        rgba(77, 34, 124, 1) 91%
+      );
     transition-timing-function: cubic-bezier(0.46, -0.78, 0.5, 1.56);
+    padding: 0 0 20px 0;
   }
   .social-icon-1 svg,
   .social-icon-2 svg,
@@ -512,24 +530,26 @@ body{
   .social-icon-4 {
     transition-duration: 0.4s;
     transition-timing-function: cubic-bezier(0.46, -0.78, 0.5, 1.56);
-  
-    background: linear-gradient(
-      180deg,
-      rgba(129, 34, 144, 1) 0%,
-      rgba(77, 34, 124, 1) 91%
-    );
+    background-color: rgb(0, 0, 0);
   }
   
   .socialcontainer:hover .social-icon-4 {
     transform: translateY(-70px);
   }
-  
-
-
-
-
 
   /* BOUTON CV + LETTRE DE MOTIVATION */ 
+  .letter{
+    padding: 8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .letter-cv{
+    padding: 0 0 20px 0;
+  }
+  .letter-cv a, .letter-motivation a{
+    text-decoration: none;
+  }
 .Documents-btn {
     display: flex;
     align-items: center;
@@ -779,6 +799,8 @@ body{
         height: 30rem;
     }
 }
+
+
   
 
 @media(min-width:1200px){
@@ -843,7 +865,14 @@ body{
 } 
 
 /*CONTACT */
-
+.contact-title h1{
+    font-size: 3em;
+}
+.contact-title h2{
+    padding: 20px;
+    font-size: 1.5em;
+    font-weight: lighter;
+}
   
 
 /*DARK-MODE*/
