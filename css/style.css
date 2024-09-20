@@ -898,7 +898,12 @@ body{
     .dark-mode #btn_cv a{
         color: #333;
     }
-
+    .dark-mode #contact h2{
+        color: white;
+    }
+    .dark-mode .icon svg{
+        fill: white;
+    }
 
 
 
